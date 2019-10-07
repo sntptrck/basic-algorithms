@@ -29,7 +29,3 @@ export const binarySearchRecursive = (list: number[], item: number, minIndex: nu
         return binarySearchRecursive(list, item, middleIndex + 1, maxIndex);
     }
 };
-
-// const arr: number[] = [1, 3, 5, 7, 9];
-
-// console.log(binarySearch(arr, 5), binarySearchRecursive(arr, undefined, undefined, 5));

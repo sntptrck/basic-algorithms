@@ -7,5 +7,3 @@ export const quickSort = (arr: number[] = []): number[] => {
     const greaterNumbersArr = restArray.filter((num) => num > pivotNumber);
     return [...quickSort(lessNumbersArr), pivotNumber, ...quickSort(greaterNumbersArr)];
 };
-
-// console.log(quickSort([2, 6, 8, 17, 3, 7, 12, 42, 5, 12, 22]));

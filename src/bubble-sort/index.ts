@@ -20,6 +20,3 @@ export const bubbleSort = (array: number[]): number[] => {
   return array;
 };
 
-// const arr: number[] = [9, 2, 8, 5, 4, 6, 1, 7, 3];
-
-// console.log(bubbleSort(arr));
