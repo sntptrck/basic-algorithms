@@ -18,7 +18,7 @@ export const binarySearch = (list: number[], item: number): number => {
 
 // tslint:disable-next-line: max-line-length
 export const binarySearchRecursive = (list: number[], item: number, minIndex: number = 0, maxIndex: number = list.length - 1): number => {
-    if (minIndex > maxIndex) { return -1 };
+    if (minIndex > maxIndex) { return -1; }
     const middleIndex: number = Math.floor((minIndex + maxIndex) / 2);
     if (list[middleIndex] === item) {
         return middleIndex;
