@@ -1,7 +1,7 @@
 const merge = (left: number[], right: number[]): number[] => {
-  const resultArray:number[] = [];
-  let leftIndex:number = 0;
-  let rightIndex:number = 0;
+  const resultArray: number[] = [];
+  let leftIndex: number = 0;
+  let rightIndex: number = 0;
   while (leftIndex < left.length && rightIndex < right.length) {
     if (left[leftIndex] < right[rightIndex]) {
       resultArray.push(left[leftIndex]);
@@ -11,9 +11,7 @@ const merge = (left: number[], right: number[]): number[] => {
       rightIndex++;
     }
   }
-  return resultArray
-    .concat(left.slice(leftIndex))
-    .concat(right.slice(rightIndex));
+  return [...resultArray, ...left.slice(leftIndex), ...right.slice(rightIndex)];
 };
 
 export const mergeSort = (arr: number[]): number[] => {
